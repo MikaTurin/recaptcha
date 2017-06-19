@@ -119,4 +119,9 @@ class Response
     {
       return $this->hostname;
     }
+
+    public function isHostnameCorrect()
+    {
+        return ($this->getHostname() == $_SERVER['HTTP_HOST']);
+    }
 }
